@@ -15,9 +15,9 @@
         }
 
         .box {
-            width: 200px;
-            height: 200px;
-            margin: 20px;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
         }
 
         .green {
@@ -37,12 +37,12 @@
         window.onload = function() {
 
             const tlGreen = gsap.timeline({ repeat: -1, yoyo: true });
-            tlGreen.to(".green", { x: 400, duration: 2 })
-                   .to(".green", { y: -200, duration: 2 });
+            tlGreen.to(".green", { x: 200, duration: 2 })
+                   。to(".green", { y: -100, duration: 2 });
 
             const tlOrange = gsap.timeline({ repeat: -1, yoyo: true });
-            tlOrange.to(".orange", { x: 200, duration: 3 })
-                    .to(".orange", { y: 400, duration: 1 });
+            tlOrange.to(".orange", { x: 100, duration: 3 })
+                    。to(".orange", { y: 200, duration: 1 });
         };
     </script>
 </body>
